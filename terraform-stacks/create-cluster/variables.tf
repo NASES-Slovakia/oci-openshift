@@ -1,3 +1,8 @@
+variable "home_region_key" {
+  type        = string
+  description = "The key of the home region."
+  default     = null
+}
 variable "zone_dns" {
   type        = string
   description = "The name of cluster's DNS zone. This name must be the same as what was specified during OpenShift ISO creation. The zone_dns value must be a valid hostname."
