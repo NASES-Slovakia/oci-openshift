@@ -12,12 +12,6 @@ terraform {
   }
 }
 
-# Home Region Terraform Provider
-provider "oci" {
-  alias  = "home"
-  region = local.home_region
-}
-
 module "resource_attribution_tags" {
   source = "./shared_modules/resource_attribution_tags/create_resource_tags"
 

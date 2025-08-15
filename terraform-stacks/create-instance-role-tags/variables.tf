@@ -11,14 +11,3 @@ variable "tag_namespace_name" {
     error_message = "The tag namespace name must start with 'openshift-'."
   }
 }
-
-variable "tenancy_ocid" {
-  type        = string
-  description = "The ocid of the current tenancy."
-}
-
-variable "home_region" {
-  type        = string
-  description = "The key of the home region."
-  default     = null
-}

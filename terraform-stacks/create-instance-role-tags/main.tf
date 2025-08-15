@@ -12,12 +12,6 @@ terraform {
   }
 }
 
-# Home Region Terraform Provider
-provider "oci" {
-  alias  = "home"
-  region = local.home_region
-}
-
 module "tags" {
   source = "./shared_modules/tags"
 

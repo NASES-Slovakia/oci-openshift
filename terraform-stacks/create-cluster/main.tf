@@ -12,12 +12,6 @@ terraform {
   }
 }
 
-# Home Region Terraform Provider
-provider "oci" {
-  alias  = "home"
-  region = local.home_region
-}
-
 module "meta" {
   source                                  = "./shared_modules/meta"
   compartment_ocid                        = var.compartment_ocid
