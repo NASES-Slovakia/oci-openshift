@@ -13,4 +13,5 @@ locals {
 
   home_region = local.region_map[
     coalesce(var.home_region_key, data.oci_identity_tenancy.tenancy.home_region_key)
-  ]}
+  ]
+}
