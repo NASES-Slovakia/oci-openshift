@@ -17,7 +17,7 @@ variable "tenancy_ocid" {
   description = "The ocid of the current tenancy."
 }
 
-variable "home_region_key" {
+variable "home_region" {
   type        = string
   description = "The key of the home region."
   default     = null
