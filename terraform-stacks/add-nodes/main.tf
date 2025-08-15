@@ -4,6 +4,7 @@ terraform {
     oci = {
       source  = "oracle/oci"
       version = ">= 6.12.0"
+      configuration_aliases = [oci.home]
     }
     time = {
       source  = "hashicorp/time"
